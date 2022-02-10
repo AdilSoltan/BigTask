@@ -10,6 +10,7 @@ scale = input()
 map_request = f"http://static-maps.yandex.ru/1.x/?ll={coords[0]},{coords[1]}&spn={scale},0.002&l=map"
 response = requests.get(map_request)
 
+
 if not response:
     print("Ошибка выполнения запроса:")
     print(map_request)
